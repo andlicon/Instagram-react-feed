@@ -1,6 +1,8 @@
 import React from 'react';
-
+// estilo
 import '../../styles/NavBarBuscar.css';
+// componentes
+import Buscador from '../components/Buscador.jsx';
 
 const NavBarBuscar = () => {
   return (
@@ -8,7 +10,7 @@ const NavBarBuscar = () => {
       <div className="container-fluid">
         <a className="navbar-brand">Instagram</a>
         <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <Buscador text="Buscar"/>
           <a href="/">Buscar</a>
         </form>
       </div>

@@ -1,0 +1,27 @@
+.buscador-input {
+  /* caja */
+  width: 100%;
+  margin: 0 !important;
+  border: none;
+  border-radius: 10px !important;
+  /* texto */
+  color: var(--color-texto-principal);
+  /* estilo */
+  background-color: var(--color-contraste);
+}
+.buscador-input:focus {
+  /* caja */
+  box-shadow: none !important;
+  /* texto */
+  color: var(--color-texto-principal);
+  /* estilo */
+  background-color: var(--color-contraste);
+}
+.buscador {
+  /* posicion */
+  position: relative;
+}
+.buscador span {
+  /* posicion */
+  position: absolute;
+}
