@@ -3,6 +3,7 @@
   width: 100%;
   margin: 0 !important;
   border: none;
+  padding-left: 40px;
   border-radius: 10px !important;
   /* texto */
   color: var(--color-texto-principal);
@@ -11,7 +12,7 @@
 }
 .buscador-input:focus {
   /* caja */
-  box-shadow: none !important;
+  box-shadow: none;
   /* texto */
   color: var(--color-texto-principal);
   /* estilo */
@@ -20,8 +21,26 @@
 .buscador {
   /* posicion */
   position: relative;
+  z-index: 0;
 }
 .buscador span {
   /* posicion */
   position: absolute;
+  z-index: 1;
+}
+
+span {
+  height: 100%;
+  width: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+span i {
+  height: 80%;
+  width: 80%;
+  font-size: 1em;
+  color: #6C7577;
 }

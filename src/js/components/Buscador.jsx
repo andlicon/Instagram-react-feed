@@ -6,9 +6,9 @@ import '../../styles/Buscador.css'
 const Buscador = props => {
   return (
     <div className="input-group buscador">
-      <span>x</span>
+      <span><i className="bi bi-search"></i></span>
       <input className="form-control me-2 buscador-input" type="search" placeholder={props.text} aria-label={props.text} />
-      <span>x</span>
+      <span></span>
     </div>
   );
 };
