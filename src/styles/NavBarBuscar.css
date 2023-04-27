@@ -5,7 +5,6 @@
   /* posicion */
   gap: 2em;
 }
-
 .navbar-brand {
   display: block;
   /* texto */
@@ -15,15 +14,12 @@
   /* estilos */
   cursor: pointer;
 }
-
 .navbar-brand:hover {
   color: var(--color-texto-principal);
 }
-
 .form-buscar {
   width: 300px;
 }
-
 .no-clickeable {
   pointer-events: none;
   position: none;
