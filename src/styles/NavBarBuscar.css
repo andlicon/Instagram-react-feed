@@ -7,6 +7,15 @@
 }
 
 .navbar-brand {
-    color: white;
+    display: block;
+    /* texto */
+    color: var(--color-texto-principal);
+    font-size: 1.5rem;
     font-family: 'Roboto Serif', serif;
+    /* estilos */
+    cursor: pointer;
+}
+
+.navbar-brand:hover {
+    color: var(--color-texto-principal);
 }
