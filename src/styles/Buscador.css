@@ -34,15 +34,19 @@
 }
 
 .buscador--span {
+  /* caja */
   width: 30px;
+  /* posicion */
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
+  /* estilo */
   pointer-events: none;
 }
 
 .buscador-icono {
+  /* texto */
   font-size: 1rem;
   color: #6C7577;
 }
