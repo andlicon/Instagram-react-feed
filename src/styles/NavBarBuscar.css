@@ -5,3 +5,8 @@
     /* posicion */
     gap: 2em;
 }
+
+.navbar-brand {
+    color: white;
+    font-family: 'Roboto Serif', serif;
+}
