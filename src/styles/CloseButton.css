@@ -1,0 +1,23 @@
+.close-button-derecha {
+    /* posicion */
+    position: absolute;
+    right: 13px;
+    z-index: 101; 
+}
+
+.close-button {
+    /* caja */
+    width: 15px;
+    height: 15px;
+    border-radius: 50% !important;
+    border: none;
+    margin: 0 !important;
+    padding: 6px;
+    /* posicion */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* estilos  */
+    background-color: white;
+}

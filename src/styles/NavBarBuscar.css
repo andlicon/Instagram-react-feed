@@ -23,3 +23,8 @@
 .form-buscar {
   width: 300px;
 }
+
+.no-clickeable {
+  pointer-events: none;
+  position: none;
+}

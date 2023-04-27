@@ -1,27 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // estilos
-import '../../styles/Buscador.css'
+import '../../styles/Buscador.css';
+// componentes
+import CloseButton from './CloseButton.jsx';
 
-const Buscador = ({text, iconoClass}) => {
+const Buscador = ({ text, iconoClass, closeButton }) => {
   // validacion
-  const hasIcon = iconoClass!=undefined 
-                  && iconoClass!=null 
-                  && iconoClass!='';
+  const hasIcon = iconoClass != undefined
+    && iconoClass != null
+    && iconoClass != '';
 
   return (
-    <div className="input-group buscador">
-      <span className="buscador--span">
+    <div className='input-group buscador'>
+      <span className='buscador--span no-clickeable'>
         <i className={`bi ${hasIcon ? iconoClass : ''} buscador-icono`}></i>
       </span>
-      <input 
+      <input
         className={`form-control me-2 buscador-input ${hasIcon ? 'buscador-input--padding' : ''}`}
-        type="search" 
-        placeholder={text} 
+        type='text'
+        placeholder={text}
         aria-label={text} />
-      <span className="buscador--span">
-        {/* nada */}
-      </span>
+      <CloseButton clase="buscador--span close-button-derecha" />
     </div>
   );
 };

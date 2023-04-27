@@ -4,6 +4,7 @@
   margin: 0 !important;
   border: none;
   border-radius: 10px !important;
+  z-index: 0;
   /* texto */
   color: #6C7577;
   font-size: 1rem;
@@ -12,6 +13,7 @@
 }
 .buscador-input--padding {
   padding-left: 40px;
+  padding-right: 20px;
 }
 .buscador-input:focus {
   /* caja */
@@ -45,8 +47,6 @@
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  /* estilo */
-  pointer-events: none;
 }
 
 .buscador-icono {
