@@ -1,9 +1,9 @@
 :root {
-    --color-contraste: #262626;
-    --color-texto-principal: white;
+  --color-contraste: #262626;
+  --color-texto-principal: white;
 }
 
 body {
-    min-height: 100vh;
-    background-color: #000000;
+  min-height: 100vh;
+  background-color: #000000;
 }

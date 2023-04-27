@@ -3,9 +3,9 @@ import React from 'react';
 import NavBarBuscar from '../components/NavBarBuscar.jsx'
 
 const Home = () => {
-    return(
-        <NavBarBuscar />
-    );
+  return (
+    <NavBarBuscar />
+  );
 };
 
 export default Home;
