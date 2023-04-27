@@ -6,7 +6,8 @@
   padding-left: 40px;
   border-radius: 10px !important;
   /* texto */
-  color: var(--color-texto-principal);
+  color: #6C7577;
+  font-size: 1rem;
   /* estilo */
   background-color: var(--color-contraste);
 }
@@ -22,6 +23,9 @@
   /* posicion */
   position: relative;
   z-index: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 .buscador span {
   /* posicion */
@@ -29,18 +33,16 @@
   z-index: 1;
 }
 
-span {
-  height: 100%;
+.buscador--span {
   width: 30px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
+  pointer-events: none;
 }
 
-span i {
-  height: 80%;
-  width: 80%;
-  font-size: 1em;
+.buscador-icono {
+  font-size: 1rem;
   color: #6C7577;
 }
