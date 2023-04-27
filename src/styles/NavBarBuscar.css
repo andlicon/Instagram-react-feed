@@ -1,0 +1,7 @@
+.navBar--small {
+    /* caja */
+    padding: 10px;
+    border-bottom: 1px solid var(--color-contraste);
+    /* posicion */
+    gap: 2em;
+}
