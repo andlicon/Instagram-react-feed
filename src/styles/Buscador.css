@@ -16,6 +16,8 @@
 .buscador-input:focus {
   /* caja */
   box-shadow: none;
+  padding-left: 1em;
+  padding-right: 1em;
   /* texto */
   color: var(--color-texto-principal);
   /* estilo */

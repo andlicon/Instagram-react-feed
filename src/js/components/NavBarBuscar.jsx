@@ -9,7 +9,7 @@ const NavBarBuscar = () => {
     <nav className="navbar bg-body-tertiary navBar--small">
       <div className="container-fluid">
         <a className="navbar-brand">Instagram</a>
-        <form className="d-flex" role="search">
+        <form className="d-flex form-buscar" role="search">
           <Buscador text="Buscar" iconoClass="bi-search"/>
           <a href="/">Buscar</a>
         </form>

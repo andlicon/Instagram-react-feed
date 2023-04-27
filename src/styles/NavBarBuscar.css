@@ -19,3 +19,7 @@
 .navbar-brand:hover {
   color: var(--color-texto-principal);
 }
+
+.form-buscar {
+  width: 300px;
+}
