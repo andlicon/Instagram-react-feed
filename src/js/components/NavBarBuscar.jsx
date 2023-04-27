@@ -10,7 +10,7 @@ const NavBarBuscar = () => {
       <div className="container-fluid">
         <a className="navbar-brand">Instagram</a>
         <form className="d-flex" role="search">
-          <Buscador text="Buscar"/>
+          <Buscador text="Buscar" iconoClass="bi-search"/>
           <a href="/">Buscar</a>
         </form>
       </div>
