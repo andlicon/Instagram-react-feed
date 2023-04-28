@@ -3,7 +3,7 @@
   padding: 10px;
   border-bottom: 1px solid var(--color-contraste);
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .navBar--small {
     display: none;
   }
@@ -22,7 +22,8 @@
   color: var(--color-texto-principal);
 }
 .form-buscar {
-  width: 300px;
+  max-width: 300px;
+  min-width: 20px;
 }
 .no-clickeable {
   pointer-events: none;
