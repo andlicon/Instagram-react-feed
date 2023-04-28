@@ -21,10 +21,10 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
         className={`form-control me-2 buscador-input ${hasIcon ? 'buscador-input--padding' : ''}`}
         type='text'
         placeholder={text}
-        id="buscador"
+        id='buscador'
         aria-label={text} 
         onKeyUp={function(event) {mostrarBorrador(event)} } />
-      <CloseButton clase="buscador--span close-button-derecha" target={"buscador"}/>
+      <CloseButton clase='buscador--span close-button-derecha' target={'buscador'}/>
     </div>
   );
 };

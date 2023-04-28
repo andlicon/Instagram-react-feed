@@ -7,12 +7,12 @@ import Interaccion from './Interaccion.jsx'
 
 const NavBarBuscar = () => {
   return (
-    <nav className="navbar bg-body-tertiary navBar--small">
-      <a className="navbar-brand">Instagram</a>
-        <form className="d-flex form-buscar" role="search">
-          <Buscador text="Buscar"
-            iconoClass="bi-search" />
-          <Interaccion icono="bi bi-heart"/>
+    <nav className='navbar bg-body-tertiary navBar--small'>
+      <a className='navbar-brand'>Instagram</a>
+        <form className='d-flex form-buscar' role='search'>
+          <Buscador text='Buscar'
+            iconoClass='bi-search' />
+          <Interaccion icono='bi bi-heart'/>
         </form>
     </nav>
   );
