@@ -20,8 +20,9 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
         className={`form-control me-2 buscador-input ${hasIcon ? 'buscador-input--padding' : ''}`}
         type='text'
         placeholder={text}
+        id="buscador"
         aria-label={text} />
-      <CloseButton clase="buscador--span close-button-derecha" />
+      <CloseButton clase="buscador--span close-button-derecha" target={"buscador"}/>
     </div>
   );
 };
