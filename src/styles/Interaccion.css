@@ -1,3 +1,7 @@
 .interaccion-boton:active .interaccion-icono {
   color: grey;
 }
+
+.interaccion-icono {
+  font-size: 1.3rem;
+}
