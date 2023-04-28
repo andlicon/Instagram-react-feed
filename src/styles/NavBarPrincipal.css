@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* estilo */
-    background-color: red;
+}
+
+.navBar-principal .interaccion-icono {
+    font-size: 1.3rem;
 }

@@ -9,7 +9,7 @@ const Interaccion = props => {
     <button
       className='icon-button interaccion-boton'
       onClick={(e) => { e.preventDefault() }}>
-      <span><i className={`interaccion ${props.icono}`}></i></span>
+      <span><i className={`interaccion-icono ${props.icono}`}></i></span>
     </button>
   );
 };
