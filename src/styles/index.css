@@ -12,3 +12,13 @@ body {
   min-height: 100vh;
   background-color: #000000;
 }
+
+.visible {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.invisible {
+  pointer-events: none;
+  opacity: 0;
+}

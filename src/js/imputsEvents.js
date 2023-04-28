@@ -1,6 +1,9 @@
+import {setVisibilidad} from './domUtility.js';
+
 export const limpiarInput = (event, inputLimpiar) => {
     const input = document.getElementById(inputLimpiar);
     input.value="";
+    setVisibilidad(event.target, false);
     event.preventDefault();
 };
 
@@ -9,10 +12,12 @@ const isInputLimpiable =  (inputLimpiar) => {
 };
 
 export const mostrarBorrador = ({target}) => {
+    const botonBorrar = target.nextElementSibling;
+
     if(isInputLimpiable(target)) {
-        target.nextElementSibling.classList.add('close-button--visible');
+        setVisibilidad(botonBorrar, true);
     }
     else {
-        target.nextElementSibling.classList.remove('close-button--visible');
+        setVisibilidad(botonBorrar, false);
     }
 };

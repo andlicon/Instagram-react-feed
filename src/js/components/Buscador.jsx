@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import '../../styles/Buscador.css';
 // componentes
 import CloseButton from './CloseButton.jsx';
-import {mostrarBorrador} from '../events/imputsEvents.js';
+import {mostrarBorrador} from '../imputsEvents.js';
 
 const Buscador = ({ text, iconoClass, closeButton }) => {
   // validacion
