@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import '../../styles/Buscador.css';
 // componentes
 import CloseButton from './CloseButton.jsx';
+import {mostrarBorrador} from '../events/imputsEvents.js';
 
 const Buscador = ({ text, iconoClass, closeButton }) => {
   // validacion
@@ -21,7 +22,8 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
         type='text'
         placeholder={text}
         id="buscador"
-        aria-label={text} />
+        aria-label={text} 
+        onKeyUp={function(event) {mostrarBorrador(event)} } />
       <CloseButton clase="buscador--span close-button-derecha" target={"buscador"}/>
     </div>
   );

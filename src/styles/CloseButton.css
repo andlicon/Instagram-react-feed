@@ -20,4 +20,11 @@
     align-items: center;
     /* estilos  */
     background-color: lightgray;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.close-button--visible {
+    pointer-events: all;
+    opacity: 1;
 }
