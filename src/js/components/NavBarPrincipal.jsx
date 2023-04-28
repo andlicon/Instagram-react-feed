@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../../styles/NavBarPrincipal.css';
 
-const NavBarInteraccion = () => {
-    return(
-        <>
-        </>
-    );
+const NavBarPrincipal = () => {
+  return (
+    <nav className='navbar bg-body-tertiary navBar--small navBar-principal'>
+      
+    </nav>
+  );
 };
 
-export default NavBarInteraccion;
+export default NavBarPrincipal;

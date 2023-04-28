@@ -1,0 +1,11 @@
+.navBar-principal {
+    /* caja */
+    border-top: 1px solid var(--color-contraste);
+    border-bottom: none;
+    /* posicion */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* estilo */
+    background-color: red;
+}
