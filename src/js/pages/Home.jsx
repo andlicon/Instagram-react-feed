@@ -9,7 +9,7 @@ const Home = () => {
     <div className='home'>
       <NavBarBuscar />
       <div className='contenido'>
-        a
+        HOLA ESTE ES EL CONTENIDO PRINCIPAL
       </div>
       <NavBarPrincipal />
     </div>
