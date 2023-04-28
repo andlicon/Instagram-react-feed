@@ -5,6 +5,13 @@
   /* posicion */
   gap: 2em;
 }
+
+@media screen and (min-width: 576px) {
+  .navBar--small {
+    display: none;
+  }
+}
+
 .navbar-brand {
   display: block;
   /* texto */
