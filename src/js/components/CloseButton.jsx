@@ -6,11 +6,15 @@ import '../../styles/CloseButton.css'
 import {limpiarInput} from '../imputsEvents.js';
 
 const CloseButton = props => {
+  console.log(props.isActive);
   return (
       <button 
         role='reset' 
-        className={`close-button ${props.clase} invisible`}
-        onClick={(event) => limpiarInput(event, props.target)}>
+        className={`close-button 
+                  ${props.clase} 
+                  ${props.isActive ? 'visible' : 'invisible'}`}
+        onClick={(event) => limpiarInput(event, props.target)}
+      >
         x
       </button>
     );

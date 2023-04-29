@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 // estilos
 import '../../styles/Buscador.css';
@@ -11,6 +11,17 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
   const hasIcon = iconoClass != undefined
     && iconoClass != null
     && iconoClass != '';
+  // hooks
+  const [isBorrable, setIsBorrable] = useState(false);
+
+  const buscadorHandler = ({target}) => {
+    if(target.value != '') {
+      setIsBorrable(true);
+    }
+    else {
+      setIsBorrable(false);
+    }
+  }
 
   return (
     <div className='input-group buscador'>
@@ -23,8 +34,8 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
         placeholder={text}
         id='buscador'
         aria-label={text} 
-        onKeyUp={function(event) {mostrarBorrador(event)} } />
-      <CloseButton clase='buscador--span close-button-derecha' target={'buscador'}/>
+        onKeyUp={buscadorHandler} />
+      <CloseButton clase='buscador--span close-button-derecha' target={'buscador'} isActive={isBorrable}/>
     </div>
   );
 };

@@ -10,14 +10,3 @@ export const limpiarInput = (event, inputLimpiar) => {
 const isInputLimpiable =  (inputLimpiar) => {
     return inputLimpiar.value != "";
 };
-
-export const mostrarBorrador = ({target}) => {
-    const botonBorrar = target.nextElementSibling;
-
-    if(isInputLimpiable(target)) {
-        setVisibilidad(botonBorrar, true);
-    }
-    else {
-        setVisibilidad(botonBorrar, false);
-    }
-};
