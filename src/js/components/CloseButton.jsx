@@ -6,7 +6,6 @@ import '../../styles/CloseButton.css'
 import {limpiarInput} from '../imputsEvents.js';
 
 const CloseButton = props => {
-  console.log(props.isActive);
   return (
       <button 
         role='reset' 
