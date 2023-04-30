@@ -25,6 +25,7 @@
   background-color: var(--color-contraste);
 }
 .buscador {
+  width: 250px;
   /* posicion */
   position: relative;
   z-index: 0;

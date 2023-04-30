@@ -9,9 +9,11 @@ const NavBarBuscar = () => {
   return (
     <nav className='navbar bg-body-tertiary navBar-buscar navBar--small'>
       <a className='navbar-brand'>Instagram</a>
-      <Buscador text='Buscar'
-        iconoClass='bi-search' />
-      <Interaccion icono='bi bi-heart' />
+      <div className='d-flex form-buscar' >
+        <Buscador text='Buscar'
+          iconoClass='bi-search' />
+        <Interaccion icono='bi bi-heart' />
+      </div>
     </nav>
   );
 };

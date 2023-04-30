@@ -23,31 +23,29 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
     }
   }
 
-  const clickHandler = ({target}) => {
-    if(target.id == 'buscadorBorrador') {
+  const clickHandler = ({ target }) => {
+    if (target.id == 'buscadorBorrador') {
       setIsBorrable(false);
     }
   }
 
   return (
-    <form 
-      className='d-flex form-buscar' 
+    <form
+      className='input-group buscador'
       role='search'
       onClick={clickHandler}
     >
-      <div className='input-group buscador'>
-        <span className='buscador--span no-clickeable'>
-          <i className={`bi ${hasIcon ? iconoClass : ''} buscador-icono`}></i>
-        </span>
-        <input
-          className={`form-control me-2 buscador-input ${hasIcon ? 'buscador-input--padding' : ''}`}
-          type='text'
-          placeholder={text}
-          id='buscador'
-          aria-label={text}
-          onKeyUp={buscadorHandler} />
-        <CloseButton clase='buscador--span close-button-derecha' target={'buscador'} isActive={isBorrable} />
-      </div>
+      <span className='buscador--span no-clickeable'>
+        <i className={`bi ${hasIcon ? iconoClass : ''} buscador-icono`}></i>
+      </span>
+      <input
+        className={`form-control me-2 buscador-input ${hasIcon ? 'buscador-input--padding' : ''}`}
+        type='text'
+        placeholder={text}
+        id='buscador'
+        aria-label={text}
+        onKeyUp={buscadorHandler} />
+      <CloseButton clase='buscador--span close-button-derecha' target={'buscador'} isActive={isBorrable} />
     </form>
   );
 };
