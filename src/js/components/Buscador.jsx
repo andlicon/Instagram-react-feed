@@ -23,8 +23,10 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
     }
   }
 
-  const clickHandler = (event) => {
-    setIsBorrable(false);
+  const clickHandler = ({target}) => {
+    if(target.id == 'buscadorBorrador') {
+      setIsBorrable(false);
+    }
   }
 
   return (

@@ -12,9 +12,8 @@ const CloseButton = props => {
         className={`close-button 
                   ${props.clase} 
                   ${props.isActive ? 'visible' : 'invisible'}`}
-        onClick={(event) => {
-          limpiarInput(event, props.target);
-        }}
+        onClick={event => limpiarInput(event, props.target)}
+        id="buscadorBorrador"
       >
         x
       </button>
