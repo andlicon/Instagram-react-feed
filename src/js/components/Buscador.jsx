@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import '../../styles/Buscador.css';
 // componentes
 import CloseButton from './CloseButton.jsx';
-import {mostrarBorrador} from '../imputsEvents.js';
+import { mostrarBorrador } from '../imputsEvents.js';
 
 const Buscador = ({ text, iconoClass, closeButton }) => {
   // validacion
@@ -14,8 +14,8 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
   // hooks
   const [isBorrable, setIsBorrable] = useState(false);
 
-  const buscadorHandler = ({target}) => {
-    if(target.value != '') {
+  const buscadorHandler = ({ target }) => {
+    if (target.value != '') {
       setIsBorrable(true);
     }
     else {
@@ -23,20 +23,30 @@ const Buscador = ({ text, iconoClass, closeButton }) => {
     }
   }
 
+  const clickHandler = (event) => {
+    setIsBorrable(false);
+  }
+
   return (
-    <div className='input-group buscador'>
-      <span className='buscador--span no-clickeable'>
-        <i className={`bi ${hasIcon ? iconoClass : ''} buscador-icono`}></i>
-      </span>
-      <input
-        className={`form-control me-2 buscador-input ${hasIcon ? 'buscador-input--padding' : ''}`}
-        type='text'
-        placeholder={text}
-        id='buscador'
-        aria-label={text} 
-        onKeyUp={buscadorHandler} />
-      <CloseButton clase='buscador--span close-button-derecha' target={'buscador'} isActive={isBorrable}/>
-    </div>
+    <form 
+      className='d-flex form-buscar' 
+      role='search'
+      onClick={clickHandler}
+    >
+      <div className='input-group buscador'>
+        <span className='buscador--span no-clickeable'>
+          <i className={`bi ${hasIcon ? iconoClass : ''} buscador-icono`}></i>
+        </span>
+        <input
+          className={`form-control me-2 buscador-input ${hasIcon ? 'buscador-input--padding' : ''}`}
+          type='text'
+          placeholder={text}
+          id='buscador'
+          aria-label={text}
+          onKeyUp={buscadorHandler} />
+        <CloseButton clase='buscador--span close-button-derecha' target={'buscador'} isActive={isBorrable} />
+      </div>
+    </form>
   );
 };
 Buscador.propTypes = {

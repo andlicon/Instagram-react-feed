@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 // estilo
 import '../../styles/CloseButton.css'
@@ -12,7 +12,9 @@ const CloseButton = props => {
         className={`close-button 
                   ${props.clase} 
                   ${props.isActive ? 'visible' : 'invisible'}`}
-        onClick={(event) => limpiarInput(event, props.target)}
+        onClick={(event) => {
+          limpiarInput(event, props.target);
+        }}
       >
         x
       </button>
@@ -23,3 +25,6 @@ CloseButton.propTypes = {
 };
 
 export default CloseButton;
+
+//Al presionar este botón, también se debería actualizar el hook del padre
+//O quiza deba implementar el hook acá, creo que tendría más lógica
