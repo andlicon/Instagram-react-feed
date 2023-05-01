@@ -8,14 +8,32 @@ const NavBarPrincipal = () => {
     <nav className='navbar bg-body-tertiary navBar--small navBar-principal'>
 
       <div className="contenedor-interacciones">
-        <a href="/" className="interaccion--md"><i className="bi bi-instagram"></i></a>
-        <Interaccion classIcono="bi-house-door-fill" />
-        <Interaccion classIcono="bi-search" classBoton="interaccion--md"/>
-        <Interaccion classIcono="bi-compass" />
-        <Interaccion classIcono="bi-collection-play" />
-        <Interaccion classIcono="bi-chat" />
-        <Interaccion classIcono="bi-heart " />
-        <Interaccion classIcono="bi-plus-square" />
+        <a href="/" 
+          className="interaccion--md">
+            <i className="bi bi-instagram"></i>
+        </a>
+        <Interaccion 
+          classIcono="bi-house-door-fill" 
+          label="Inicio"/>
+        <Interaccion 
+          classIcono="bi-search"
+          label="Búsqueda"
+          classBoton="interaccion--md"/>
+        <Interaccion 
+          classIcono="bi-compass" 
+          label="Explorar"/>
+        <Interaccion 
+          classIcono="bi-collection-play" 
+          label="Reels"/>
+        <Interaccion 
+          classIcono="bi-chat" 
+          label="Mensajes"/>
+        <Interaccion 
+          classIcono="bi-heart " 
+          label="Notificaciones"/>
+        <Interaccion 
+          classIcono="bi-plus-square" 
+          label="Crear"/>
       </div>
       <div className="interaccion--md">
         <button>

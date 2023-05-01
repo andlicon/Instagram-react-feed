@@ -1,14 +1,13 @@
 .interaccion-boton:active .interaccion-icono {
   color: grey;
 }
-
 .interaccion-icono {
   font-size: 1.3rem;
 }
-.interaccion--md {
+.interaccion--md,
+.interaccion--lg {
   display: none;
 }
-
 .contenedor-interacciones {
   width: 100%;
   display: flex;
@@ -31,5 +30,11 @@
   }
   .contenedor-interacciones>*:first-child {
     margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .interaccion--lg {
+    display: block;
   }
 }
