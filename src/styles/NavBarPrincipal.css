@@ -13,6 +13,10 @@
   background-color: inherit;
 }
 
+.brand-principal span {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .navBar-principal {
     /* caja */
@@ -32,7 +36,14 @@
   .navBar-principal {
     /* caja */
     width: 250px;
-    margin-left: 0.8em;
+  }
+
+  .brand-principal i {
+    display: none;
+  }
+  .brand-principal span {
+    display: block;
+    text-decoration: none;
   }
   
 }

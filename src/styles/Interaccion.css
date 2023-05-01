@@ -20,7 +20,6 @@
   margin-left: 0.8em;
 }
 .contenedor-interacciones>a {
-  margin-left: 1em;
   color: white;
   font-size: 2em;
   width: 100%;
@@ -68,5 +67,8 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+  }
+  .contenedor-interacciones>a {
+    margin-left: 0.2em;
   }
 }

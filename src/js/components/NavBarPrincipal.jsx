@@ -9,8 +9,9 @@ const NavBarPrincipal = () => {
 
       <div className="contenedor-interacciones">
         <a href="/" 
-          className="interaccion--md">
+          className="interaccion--md brand-principal">
             <i className="bi bi-instagram"></i>
+            <span>Instagram</span>
         </a>
         <Interaccion 
           classIcono="bi-house-door-fill" 
