@@ -24,6 +24,3 @@ CloseButton.propTypes = {
 };
 
 export default CloseButton;
-
-//Al presionar este botón, también se debería actualizar el hook del padre
-//O quiza deba implementar el hook acá, creo que tendría más lógica
