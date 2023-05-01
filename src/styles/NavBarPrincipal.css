@@ -13,8 +13,13 @@
   background-color: inherit;
 }
 
+.brand-principal {
+  text-decoration: none;
+}
 .brand-principal span {
   display: none;
+  font-size: 1.5rem;
+  font-family: 'Roboto Serif', serif;
 }
 
 @media screen and (min-width: 768px) {
