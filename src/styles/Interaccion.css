@@ -5,3 +5,19 @@
 .interaccion-icono {
   font-size: 1.3rem;
 }
+.interaccion--md {
+  display: none;
+}
+
+.contenedor-interacciones {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .interaccion--md {
+    display: block;
+  }
+}

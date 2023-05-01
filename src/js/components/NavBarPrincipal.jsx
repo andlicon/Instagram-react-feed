@@ -6,13 +6,22 @@ import Interaccion from './Interaccion.jsx';
 const NavBarPrincipal = () => {
   return (
     <nav className='navbar bg-body-tertiary navBar--small navBar-principal'>
-      <Interaccion icono="bi-house-door-fill" />
-      {/* <Interaccion icono="bi-search" /> */}
-      <Interaccion icono="bi-compass" />
-      <Interaccion icono="bi-collection-play" />
-      <Interaccion icono="bi-messenger" />
-      <Interaccion icono="bi-heart "/>
-      <Interaccion icono="bi-plus-square" />
+
+      <div className="contenedor-interacciones">
+        <a href="/" className="interaccion--md"><i className="bi bi-instagram"></i></a>
+        <Interaccion classIcono="bi-house-door-fill" />
+        <Interaccion classIcono="bi-search" classBoton="interaccion--md"/>
+        <Interaccion classIcono="bi-compass" />
+        <Interaccion classIcono="bi-collection-play" />
+        <Interaccion classIcono="bi-chat" />
+        <Interaccion classIcono="bi-heart " />
+        <Interaccion classIcono="bi-plus-square" />
+      </div>
+      <div className="interaccion--md">
+        <button>
+          <i className="bi bi-list"></i>
+        </button>
+      </div>
     </nav>
   );
 };

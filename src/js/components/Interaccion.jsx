@@ -4,17 +4,17 @@ import PropTypes from 'prop-types';
 import '../../styles/button.css'
 import '../../styles/Interaccion.css';
 
-const Interaccion = props => {
+const Interaccion = ({classIcono, classBoton}) => {
   return (
     <button
-      className='icon-button interaccion-boton'
+      className={`icon-button interaccion-boton ${classBoton ? classBoton : ''}`}
       onClick={(e) => { e.preventDefault() }}>
-      <span><i className={`interaccion-icono ${props.icono}`}></i></span>
+      <i className={`interaccion-icono bi ${classIcono}`}></i>
     </button>
   );
 };
 Interaccion.propTypes = {
-  icono: PropTypes.string
+  classIcono: PropTypes.string
 };
 
 export default Interaccion;
