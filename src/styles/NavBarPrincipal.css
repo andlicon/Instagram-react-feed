@@ -31,7 +31,8 @@
 @media screen and (min-width: 1200px) {
   .navBar-principal {
     /* caja */
-    width: 300px;
-    background-color: red;
+    width: 250px;
+    margin-left: 1em;
   }
+  
 }
