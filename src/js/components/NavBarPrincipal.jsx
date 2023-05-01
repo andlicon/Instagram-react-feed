@@ -35,10 +35,10 @@ const NavBarPrincipal = () => {
           classIcono="bi-plus-square" 
           label="Crear"/>
       </div>
-      <div className="interaccion--md">
-        <button>
-          <i className="bi bi-list"></i>
-        </button>
+      <div className="interaccion--md interaccion--settings">
+      <Interaccion 
+          classIcono="bi bi-list" 
+          label="Más"/>
       </div>
     </nav>
   );

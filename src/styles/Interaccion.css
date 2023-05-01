@@ -15,9 +15,9 @@
   align-items: center;
 }
 
-.contenedor-interacciones p {
+.interaccion-boton p {
   margin-bottom: 0;
-  margin-left: 0.5em;
+  margin-left: 0.8em;
 }
 .contenedor-interacciones>a {
   margin-left: 1em;
@@ -25,7 +25,9 @@
   font-size: 2em;
   width: 100%;
 }
-
+.interaccion--settings {
+  margin-bottom: 1em;
+}
 .contenedor-interacciones p:first-child {
   font-weight: bold;
 }
@@ -58,6 +60,13 @@
   .interaccion-boton {
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  .interaccion--settings {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     align-items: center;
   }
 }
