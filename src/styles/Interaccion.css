@@ -20,4 +20,16 @@
   .interaccion--md {
     display: block;
   }
+  .contenedor-interacciones {
+    /* caja */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    height: 55%;
+  }
+  .contenedor-interacciones>*:first-child {
+    margin-bottom: 2em;
+  }
 }

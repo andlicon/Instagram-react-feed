@@ -18,8 +18,13 @@
     /* caja */
     height: 100vh;
     width: 5em;
+    /* posicion */
     left: 0;
     order: 1;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    /* estilo */
     border-right: 1px solid var(--color-contraste);
   }
 }
