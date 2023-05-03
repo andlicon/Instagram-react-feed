@@ -2,6 +2,9 @@ import React from 'react';
 // componentes
 import NavBarBuscar from '../components/NavBarBuscar.jsx';
 import NavBarPrincipal from '../components/NavBarPrincipal.jsx'
+import Caroussel from '../components/Caroussel.jsx'
+
+// estilo
 import '../../styles/Home.css';
 
 const Home = () => {
@@ -9,7 +12,7 @@ const Home = () => {
     <div className='home'>
       <NavBarBuscar />
       <div className='contenido'>
-        HOLA ESTE ES EL CONTENIDO PRINCIPAL
+        <Caroussel />
       </div>
       <NavBarPrincipal />
     </div>
