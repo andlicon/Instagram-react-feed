@@ -19,8 +19,8 @@
 
 .historia-img {
     /* caja */
-    width: 66px;
-    height: 66px;
+    width: 61px;
+    height: 61px;
     border-radius: 50%;
     /* estilos */
     object-fit: cover;
@@ -30,4 +30,5 @@
 .historia-username {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 0;
 }

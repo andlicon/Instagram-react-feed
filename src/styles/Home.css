@@ -8,6 +8,7 @@
   /* caja */
   height: 200vh;
   width: 100%;
+  padding: 0 1em;
   /* posicion */
   position: relative;
   order: 2;

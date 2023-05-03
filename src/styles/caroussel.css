@@ -12,7 +12,11 @@
     overflow: hidden;
 }
 
+ul.caroussel-historias {
+    padding: 0 1em 0 1em;
+}
+
 .caroussel-historias .historia {
-    margin-right: 0.4em;
+    margin-right: 0.5em;
     width: 74px;
 }
