@@ -11,6 +11,8 @@
   order: 3;
   /* estilo */
   background-color: inherit;
+  z-index: 10;
+  background-color: black;
 }
 
 .brand-principal {
