@@ -31,6 +31,7 @@
     width: 5em;
     /* posicion */
     left: 0;
+    top: 0;
     order: 1;
     flex-flow: column;
     justify-content: space-between;
