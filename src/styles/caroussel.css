@@ -1,0 +1,18 @@
+.caroussel-historias {
+    /* caja */
+    margin-top: 2em;
+    /* posicion */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 1em;
+    /* estilo */
+    overflow: hidden;
+}
+
+.caroussel-historias .historia {
+    margin-right: 0.4em;
+    width: 74px;
+}

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import Historia from './Historia.jsx';
 
+import '../../styles/caroussel.css';
+
 const Caroussel = (props) => {
     const [historias, setHistorias] = useState([]);
 
