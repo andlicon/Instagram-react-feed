@@ -6,15 +6,16 @@ import '../../styles/caroussel.css';
 
 const Caroussel = (props) => {
     const [historias, setHistorias] = useState([]);
+    const [cantidadHistorias, setCantidadHistorias]  = useState(20);
 
     useEffect( () => {
         obtenerHistorias();
     }, []);
 
     const obtenerHistorias = async () => {
-        const data = await fetch('https://randomuser.me/api/?results=15');
-        const historias = await data.json();
-        setHistorias(historias.results);
+        fetch(`https://randomuser.me/api/?results=${cantidadHistorias}`)
+        .then(response => response.json())
+        .then(data => setHistorias(data.results))
     }
 
     return (
