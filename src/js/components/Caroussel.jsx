@@ -20,6 +20,9 @@ const Caroussel = (props) => {
 
     return (
         <ul className='caroussel-historias'>
+            <span className='caroussel-pasar' id='carousselPrev'>
+                <i className="bi bi-arrow-left-short"></i>
+            </span>
             {
                 historias.map( (elemento, index) => {
                     const username = elemento.login.username;
@@ -34,6 +37,9 @@ const Caroussel = (props) => {
                     );
                 })
             }
+            <span className='caroussel-pasar' id='carousselNext'>
+                <i className="bi bi-arrow-right-short"></i>
+            </span>
         </ul>
     );
 };

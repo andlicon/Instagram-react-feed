@@ -20,3 +20,29 @@ ul.caroussel-historias {
     margin-right: 0.5em;
     width: 74px;
 }
+
+.caroussel-pasar {
+    /* caja */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* posicion */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* estilos */
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    pointer-events: all;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.caroussel-pasar#carousselPrev {
+    left: 0;
+}
+.caroussel-pasar#carousselNext {
+    right: 0;
+}
