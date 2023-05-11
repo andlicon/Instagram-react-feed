@@ -1,18 +1,21 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
-
-// include your styles into the webpack bundle
 import "../styles/index.css";
+// componentes
+import NavBarBuscar from './components/NavBarBuscar.jsx';
+import NavBarPrincipal from './components/NavBarPrincipal.jsx'
 
 //import your own components
 import Home from "./pages/Home.jsx";
 
 const App = () => {
     return(
-        <>
+        <div className='home'>
+            <NavBarBuscar />
             <Home />
-        </>
+            <NavBarPrincipal />
+        </div>
     );
 };
 
