@@ -33,7 +33,8 @@ const Publicaciones = props => {
               title = { post.title } 
               body = { post.body } 
               tags = { post.tags } 
-              userId = { post.userId } />
+              userId = { post.userId }
+              contenidos = { ['/','/'] } />
           )
         })
       }

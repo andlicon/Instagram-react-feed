@@ -1,10 +1,13 @@
 import React from 'react';
 import '../../styles/post.css';
 
+import Contenido from './Contenido.jsx';
+
 const Post = ({ title,
   body,
   tags,
-  userId }) => {
+  userId,
+  contenidos }) => {
   return (
     <div className='post'>
       <div className='post__header'>
@@ -30,6 +33,16 @@ const Post = ({ title,
           <i className="bi bi-three-dots"></i>
         </button>
       </div>
+    <div className="post__contenidos">
+      {
+        contenidos.map( (elemento, index) => {
+          return(
+            <Contenido 
+              key={ index } />
+          );
+        })
+      }
+    </div>
     </div>
   );
 };

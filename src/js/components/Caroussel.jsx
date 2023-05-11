@@ -9,7 +9,7 @@ const Caroussel = (props) => {
   const [cantidadHistorias, setCantidadHistorias] = useState(20);
 
   useEffect(() => {
-    // obtenerHistorias();
+    obtenerHistorias();
   }, []);
 
   const obtenerHistorias = async () => {

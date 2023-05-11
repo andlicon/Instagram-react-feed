@@ -12,6 +12,7 @@
 .post__header {
   /* caja */
   height: 3em;
+  margin-bottom: 5px;
   /* posicion */
   display: flex;
   flex-flow: row nowrap;
