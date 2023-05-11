@@ -17,3 +17,35 @@
   /* posicion */
   position: absolute;
 }
+
+.contenidos__pasador {
+  /* caja */
+  width: 25px;
+  aspect-ratio: 1/1;
+  border: 0;
+  outline: none;
+  border-radius: 100%;
+  /* posicion */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* estilo */
+  background-color: lightgray;
+  color: white;
+}
+
+.contenidos__pasador>i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.contenidos__pasador--prev {
+  left: 15px;
+}
+
+.contenidos__pasador--next {
+  right: 15px;
+}
