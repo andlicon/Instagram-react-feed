@@ -1,0 +1,19 @@
+.contenidos {
+  /* caja */
+  height: 500px;
+  /* posicion */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contenidos__img {
+  /* caja */
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* posicion */
+  position: absolute;
+}

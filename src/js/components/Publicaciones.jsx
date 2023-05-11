@@ -21,7 +21,11 @@ const Publicaciones = props => {
     }
   }
 
-  useEffect( () => {consultarPosts() }, []);
+  useEffect( 
+    () => {
+      consultarPosts() 
+    }, []
+  );
 
   return(
     <div className='publicaciones'>

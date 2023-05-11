@@ -33,16 +33,8 @@ const Post = ({ title,
           <i className="bi bi-three-dots"></i>
         </button>
       </div>
-    <div className="post__contenidos">
-      {
-        contenidos.map( (elemento, index) => {
-          return(
-            <Contenido 
-              key={ index } />
-          );
-        })
-      }
-    </div>
+      <Contenido
+        contenidos = { contenidos } />
     </div>
   );
 };
