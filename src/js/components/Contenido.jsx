@@ -34,8 +34,8 @@ const Contenido = ({ contenidos }) => {
         contenidos.map((contenido, index) => {
           return (
             <img
-              key={index}
-              src=''
+              key={ index }
+              src={ contenido }
               alt=''
               className={ `contenidos__img ${index==mostrar ?'mostrar':''}` } />
           )

@@ -17,6 +17,14 @@
   /* posicion */
   position: absolute;
   z-index: 1;
+  /* estilo */
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+}
+
+.contenidos__img.mostrar {
+  opacity: 1;
 }
 
 .contenidos__pasador {

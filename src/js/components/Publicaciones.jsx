@@ -38,7 +38,9 @@ const Publicaciones = props => {
               body = { post.body } 
               tags = { post.tags } 
               userId = { post.userId }
-              contenidos = { ['/','/'] } />
+              contenidos = { [
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKmYdELV-3JYELig0AvZXNNT0kaI2GAnwku-kR2qz2JVlCqLIRFDGHOUMrBFh9XW7DgEM&usqp=CAU',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6yUBk3j2ratwLBhqhstm8l9qtZgOlD8eTsSnt-_tS&s'] } />
           )
         })
       }
