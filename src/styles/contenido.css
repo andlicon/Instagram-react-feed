@@ -16,6 +16,7 @@
   border: none;
   /* posicion */
   position: absolute;
+  z-index: 1;
 }
 
 .contenidos__pasador {
@@ -30,6 +31,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 2;
   /* estilo */
   background-color: lightgray;
   color: white;
@@ -48,4 +50,30 @@
 
 .contenidos__pasador--next {
   right: 15px;
+}
+
+.contenidos__status {
+  /* caja */
+  width: 3em;
+  height: 0.5em;
+  /* posicion */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 1em;
+}
+
+.status {
+  /* caja */
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  /* estilo */
+  background-color: lightgray;
+}
+
+.status--actual {
+  /* estilo */
+  background-color: white;
 }
