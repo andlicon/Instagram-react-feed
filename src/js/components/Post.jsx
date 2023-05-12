@@ -30,11 +30,34 @@ const Post = ({ title,
           </p>
         </div>
         <button className='post__opciones'>
-          <i className="bi bi-three-dots"></i>
+          <i className='bi bi-three-dots'></i>
         </button>
       </div>
       <Contenido
         contenidos = { contenidos } />
+      <div className='interaccion__container'>
+        <div className='interaccion__group'>
+          <button
+            className='post__interaccion'>
+            <i className='bi bi-heart'></i>
+          </button>
+          <button
+            className='post__interaccion'>
+            <i className='bi bi-chat'></i>
+          </button>
+          <button
+            className='post__interaccion'>
+            <i class='bi bi-send'></i>
+          </button>
+        </div>
+        <div className='interaccion__group'>
+          <button className='post__interaccion'>
+            <i className='bi bi-box-arrow-down'></i>
+          </button>
+        </div>
+      </div>
+      <div className='post__text'>
+      </div>
     </div>
   );
 };

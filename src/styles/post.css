@@ -1,5 +1,8 @@
 .post {
+  /* caja */
   margin-bottom: 1em;
+  border-bottom: 1px solid lightgray;
+  /* estilo */
   background-color: grey;
 }
 
@@ -12,8 +15,7 @@
 
 .post__header {
   /* caja */
-  height: 3em;
-  margin-bottom: 5px;
+  padding: 0.5em 1em;
   /* posicion */
   display: flex;
   flex-flow: row nowrap;
@@ -44,10 +46,6 @@
 }
 .post__header .post__redirect:hover>p {
   color: grey;
-}
-
-.post__header {
-  background-color: red;
 }
 
 .post__img-autor {
@@ -90,8 +88,38 @@
   /* caja */
   border: 0;
   color: white;
+  /* estilo */
+  background-color: transparent;
+  font-size: 1.4rem;
+}
+
+.interaccion__container {
+  /* caja */
+  border: none;
+  /* posicion */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interaccion__group {
+  /* posicion */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1em;
+}
+
+.post__interaccion {
+  /* caja */
+  border: none;
+  padding: 0;
+  /* estilo */
+  font-size: 1.4rem;
   background-color: transparent;
 }
+
 
 @media (max-width: 350px) {
   .post__title {
