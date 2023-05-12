@@ -24,7 +24,7 @@ const Contenido = ({ contenidos }) => {
   return (
     <div className='contenidos'>
       {
-        isPasable &&
+        (isPasable && mostrar>0) &&
         <button className='contenidos__pasador contenidos__pasador--prev'
           onClick={event => contenidoSiguiente(event, false)}>
           <i className='bi bi-caret-left'></i>
@@ -58,7 +58,7 @@ const Contenido = ({ contenidos }) => {
         </div>
       }
       {
-        isPasable &&
+        (isPasable && mostrar<cantidad-1) &&
         <button className='contenidos__pasador contenidos__pasador--next'
           onClick={event => contenidoSiguiente(event, true)}>
           <i className='bi bi-caret-right'></i>

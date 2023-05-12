@@ -47,7 +47,7 @@ const Post = ({ title,
           </button>
           <button
             className='post__interaccion'>
-            <i class='bi bi-send'></i>
+            <i className='bi bi-send'></i>
           </button>
         </div>
         <div className='interaccion__group'>
