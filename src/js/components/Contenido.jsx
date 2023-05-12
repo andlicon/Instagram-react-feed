@@ -37,7 +37,7 @@ const Contenido = ({ contenidos }) => {
               key={index}
               src=''
               alt=''
-              className='contenidos__img' />
+              className={ `contenidos__img ${index==mostrar ?'mostrar':''}` } />
           )
         })
       }
